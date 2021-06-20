@@ -8,7 +8,9 @@ function Globe() {
     // 1- define scene, camera, renderer and associated vars
     const width = window.innerWidth;
     const height = window.innerHeight;
-    const earthTexture = '/images/land_ocean_ice_cloud_2048.jpg'; // or earthmap1k.jpg,
+    // or earthmap1k.jpg, -- served from /public/
+    const earthTexture = '/images/land_ocean_ice_cloud_2048.jpg';
+
     const camera = new THREE.PerspectiveCamera(
       45, // view-angle in degrees
       width / height, // aspect
